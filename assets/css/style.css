@@ -6,16 +6,35 @@ html{
       font-family: 'Poppins', sans-serif;
 }
 .presentation{
-      background-image: url(../img/laptop.png);
-      background-size:contain;
+      background-image: url(../img/laptopp.png);
+      background-size:cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+      position: relative;  /*Para responsividade. Img tem largura fixa e os dispositivos têm larguras diferentes. Com o relative, a imagem vai permanecer no mesmo logcal independente da largura da tela*/
 }
 .container{
       min-height: 100vh;
       width: 100%;
-      background-repeat: no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
+}
+
+.presentation h1{
+      display: block;
+      width: fit-content;
+      /*The fit-content behaves as fit-content(stretch). In practice this means that the box will use the available space, but never more than max-content.*/
+      font-size: 5rem; /*relative*/
+      color: white;
+      position: relative;
+}
+.presentation .cta{
+      display: inline-block;
+      padding: 10px 30px;
+      background-color: #e95c84;
+      color:#f6ddd0;
+      font-size: 2rem;
+      font-weight: 500;
 }
 a{
       text-decoration: none;
