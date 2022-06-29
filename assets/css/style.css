@@ -31,10 +31,18 @@ html{
 .presentation .cta{
       display: inline-block;
       padding: 10px 30px;
-      background-color: #e95c84;
-      color:#f6ddd0;
+      background-color: transparent;
+      border: 3px solid #F9F681;
+      color:#F9F681;
       font-size: 2rem;
       font-weight: 500;
+      text-transform: uppercase;
+}
+.presentation .cta:hover{
+       background-color: #f98fc2d1;
+       
+       color: white;
+       border: 3px solid white;
 }
 a{
       text-decoration: none;
