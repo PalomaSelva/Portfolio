@@ -11,7 +11,7 @@ html{
       background-position: top center;
       background-repeat: no-repeat;
       position: relative;  /*Para responsividade. Img tem largura fixa e os dispositivos têm larguras diferentes. Com o relative, a imagem vai permanecer no mesmo logcal independente da largura da tela*/
-      z-index: -2;
+
 }
 .container{
       min-height: 100vh;
