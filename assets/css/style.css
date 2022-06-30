@@ -5,22 +5,24 @@ html{
       scroll-behavior: smooth;
       font-family: 'Poppins', sans-serif;
 }
-.presentation{
+#presentation{
       background-image: url(../img/laptopp1.png);
       background-size:cover;
       background-position: top center;
       background-repeat: no-repeat;
       position: relative;  /*Para responsividade. Img tem largura fixa e os dispositivos têm larguras diferentes. Com o relative, a imagem vai permanecer no mesmo logcal independente da largura da tela*/
+      z-index: 1;
 }
-.container{
+.presentation-container{
       min-height: 100vh;
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
+      
 }
 
-.presentation h1{
+#presentation h1{
       display: block;
       width: fit-content;
       /*The fit-content behaves as fit-content(stretch). In practice this means that the box will use the available space, but never more than max-content.*/
@@ -28,7 +30,7 @@ html{
       color: white;
       position: relative;
 }
-.presentation .cta{
+#presentation .cta{
       display: inline-block;
       padding: 10px 30px;
       background-color: transparent;
@@ -41,11 +43,29 @@ html{
       font-weight: 500;
       text-transform: uppercase;
 }
-.presentation .cta:hover{
+#presentation .cta:hover{
        background: linear-gradient(90deg, rgba(254,186,91,0.88) 3%, rgba(232,158,79,0.88) 13%, rgba(237,158,95,0.88) 23%, rgba(229,134,116,0.88) 40%, rgba(229,134,116,0.88) 53%, rgba(236,121,134,0.8802871490393032) 76%, rgba(246,96,147,0.8858893899356618) 100%);
-       
+       font-weight: 600;
        color: white;
        
+}
+#presentation h1 span{
+      position: absolute;
+      top:0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+}
+#presentation::after{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      opacity: 0.2;
+      z-index: -1;
 }
 a{
       text-decoration: none;
