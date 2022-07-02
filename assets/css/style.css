@@ -168,7 +168,23 @@ a{
       flex-basis: 50%;
       height: 500px;
       overflow: hidden;
-      background-color: black;
+      position: relative;
+}
+#portfolio .project-img::after{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgb(112, 111, 111);
+      opacity: .6;
+}
+#portfolio .project-img img{
+      transition: 0.5s ease transform;
+}
+#portifolio .project-item:hover .project-img img{
+      transform: scale(1.1);
 }
 
 
