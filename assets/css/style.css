@@ -119,11 +119,17 @@ a{
       max-width: 1200px;
       margin: 0 auto;
       padding: 100px 0;
-      background-color: aquamarine;
+
 }
 #portfolio .header{
       padding-bottom: 50px;
 
+}
+#portfolio .all-projects{
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      flex-direction: column;
 }
 #portfolio .project-item{
       display: flex;
@@ -131,6 +137,32 @@ a{
       justify-items: center;
       flex-direction: column;
       width: 80%;
+      margin: 20px auto;
+      overflow: hidden;
+      border-radius: 10px;
+
+}
+
+#portfolio .project-info{
+      padding: 30px;
+      flex-basis: 50%;
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      background-image: linear-gradient( 145deg, #4105af 10%, #000132 100%);
+      color: white;
+
+}
+#portfolio .project-info h1{
+      font-size: 3.7em;
+      font-weight: 600;
+}
+#portfolio .project-info h2{
+      font-size: 1.8em;
+      margin-top: 10px;
+      font-weight: 500;
 }
 
 
