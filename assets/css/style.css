@@ -9,9 +9,16 @@ a{
       text-decoration: none;
 }   
 img{
-	height: 100%;
 	width: 100%;
+      height: auto;
 	object-fit: cover;
+}
+p{
+      font-size: 1.4rem;
+      margin-top: 5px;
+      line-height: 2.5rem;
+      font-weight: 200;
+      letter-spacing: .15rem;
 }
 /* Seção de apresentação */
 
@@ -179,6 +186,7 @@ img{
       height: 300px;
       overflow: hidden;
       position: relative;
+      width: 100%;
 }
 #portfolio .project-img::after{
       content: '';
@@ -195,6 +203,16 @@ img{
 }
 .project-img:hover img{
       transform: scale(1.15);
+}
+
+.section-title{
+	font-size: 4em ;
+	font-weight: 400;
+	color:black;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	text-align: center;
+      margin-bottom: 10px;
 }
 
 
@@ -214,5 +232,15 @@ img{
       100%{
             width: 0;
             left:100%;
+      }
+}
+
+
+/* Media Query */
+
+@media only screen and (min-width:768px){
+      #portfolio .project-item{
+            flex-direction: row;
+            
       }
 }
