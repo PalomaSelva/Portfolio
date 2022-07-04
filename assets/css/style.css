@@ -8,11 +8,15 @@ html{
 a{
       text-decoration: none;
 }   
-
+img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
 /* Seção de apresentação */
 
 .presentation{
-      background-image: url(../img/laptopp1.png);
+      background-image: url(../img/background.jpg);
       background-size:cover;
       background-position: top center;
       background-repeat: no-repeat;
@@ -24,6 +28,15 @@ a{
       display: flex;
       align-items: center;
       justify-content: center;
+}
+
+.section-title{
+	font-size: 4em ;
+	font-weight: 400;
+	color:black;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	text-align: center;
 }
 
 .presentation h1{
@@ -121,10 +134,7 @@ a{
       padding: 100px 0;
 
 }
-#portfolio .header{
-      padding-bottom: 50px;
 
-}
 #portfolio .all-projects{
       display: flex;
       align-items: center;
@@ -166,7 +176,7 @@ a{
 }
 #portfolio .project-img{
       flex-basis: 50%;
-      height: 500px;
+      height: 300px;
       overflow: hidden;
       position: relative;
 }
@@ -177,14 +187,14 @@ a{
       top: 0;
       height: 100%;
       width: 100%;
-      background-color: rgb(112, 111, 111);
-      opacity: .6;
+      background-color: rgb(136, 134, 134);
+      opacity: .4;
 }
 #portfolio .project-img img{
       transition: 0.5s ease transform;
 }
-#portifolio .project-item:hover .project-img img{
-      transform: scale(1.1);
+.project-img:hover img{
+      transform: scale(1.15);
 }
 
 
