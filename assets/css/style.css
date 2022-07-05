@@ -20,6 +20,9 @@ p{
       font-weight: 200;
       letter-spacing: .15rem;
 }
+.clear{
+      clear: both;
+}
 /* Seção de apresentação */
 
 .presentation{
@@ -215,6 +218,19 @@ p{
       margin-bottom: 10px;
 }
 
+#portfolio li{
+      font-size: 1.4rem;
+      margin-top: 5px;
+      line-height: 2.5rem;
+      font-weight: 200;
+      letter-spacing: .15rem;
+}
+#portfolio .list-style{
+      margin-top: 5px;
+}
+#portfolio .list-title{
+      font-weight: 400;
+}
 
 /* keyframes */
 
@@ -225,7 +241,6 @@ p{
 }
 @keyframes text_reveal_box{
       50%{
-            
             width: 100%;
             left:0;
       }
@@ -235,6 +250,49 @@ p{
       }
 }
 
+/* footer */
+#footer{
+      display: flex;  
+      flex-direction: column;  
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      background-color: #a09fa3d8;
+}
+
+#footer .social-container {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding: 10px;
+      width: 400px;
+}
+
+#footer .social-container .social-icons{
+      list-style: none;
+      width: 100%;
+      margin-right: 40px;
+
+}
+
+#footer .social-container .social-icons li{
+      display: inline-block;
+      padding: 20px 20px 10px 20px;
+      font-size: 2.5rem;
+      margin: 8px;
+      
+}
+#footer p{
+      font-size: 1em;
+      font-weight: 300;
+}
+#footer .autor{
+      font-weight: 600;
+      color: white;
+}
 
 /* Media Query */
 
