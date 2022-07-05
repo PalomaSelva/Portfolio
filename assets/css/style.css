@@ -232,24 +232,6 @@ p{
       font-weight: 400;
 }
 
-/* keyframes */
-
-@keyframes text_reveal{
-      100%{
-      color: white;
-      }
-}
-@keyframes text_reveal_box{
-      50%{
-            width: 100%;
-            left:0;
-      }
-      100%{
-            width: 0;
-            left:100%;
-      }
-}
-
 /* footer */
 #footer{
       display: flex;  
@@ -258,7 +240,7 @@ p{
       justify-content: center;
       position: relative;
       width: 100%;
-      background-color: #a09fa3d8;
+      background-color: #a09fa3a1;
 }
 
 #footer .social-container {
@@ -293,6 +275,28 @@ p{
       font-weight: 600;
       color: white;
 }
+#footer i{
+      color:rgb(84, 34, 193);
+}
+
+/* keyframes */
+
+@keyframes text_reveal{
+      100%{
+      color: white;
+      }
+}
+@keyframes text_reveal_box{
+      50%{
+            width: 100%;
+            left:0;
+      }
+      100%{
+            width: 0;
+            left:100%;
+      }
+}
+
 
 /* Media Query */
 
